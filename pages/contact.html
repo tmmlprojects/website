@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AI SmartHome Solutions</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .contact-hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-content {
+            padding: 4rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .info-icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .info-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .info-content p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .info-content a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            border: 2px solid var(--gray-light);
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .faq-section {
+            background: #f7fafc;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            color: var(--gray);
+            line-height: 1.7;
+            margin-top: 1rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .success-message {
+            display: none;
+            background: #48bb78;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
+                    <path d="M25 5L5 20V45H20V30H30V45H45V20L25 5Z" fill="url(#logoGradient)"/>
+                    <circle cx="25" cy="22" r="3" fill="#fff"/>
+                    <defs>
+                        <linearGradient id="logoGradient" x1="5" y1="5" x2="45" y2="45">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="brand-name">AI SmartHome</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#features" class="nav-link">Features</a></li>
+                <li><a href="../index.html#services" class="nav-link">Services</a></li>
+                <li><a href="../index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link btn-contact active">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Let's discuss how we can transform your home with AI</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>Our team typically responds within 24 hours</p>
+                            <a href="mailto:info@aismarthome.com">info@aismarthome.com</a><br>
+                            <a href="mailto:support@aismarthome.com">support@aismarthome.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>Monday - Friday, 9am - 6pm EST</p>
+                            <a href="tel:+18005551234">(800) 555-1234</a><br>
+                            <a href="tel:+18005555678">(800) 555-5678</a> (Support)
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <div class="info-content">
+                            <h3>Live Chat</h3>
+                            <p>Chat with our AI assistant 24/7 or speak to a human during business hours</p>
+                            <a href="#" onclick="document.getElementById('chatbot-toggle').click(); return false;">Start Chat</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Office Location</h3>
+                            <p>123 Innovation Drive<br>
+                            Tech Valley, CA 94025<br>
+                            United States</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <div class="contact-form">
+                        <h2 style="margin-bottom: 1.5rem; color: var(--dark);">Send Us a Message</h2>
+
+                        <div class="success-message" id="success-message">
+                            ✓ Message sent successfully! We'll get back to you within 24 hours.
+                        </div>
+
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interest">I'm Interested In *</label>
+                                <select id="interest" name="interest" required>
+                                    <option value="">Select an option</option>
+                                    <option value="entry">Entry Tier ($49/month)</option>
+                                    <option value="pro">Pro Tier ($79/month)</option>
+                                    <option value="enterprise">Enterprise Tier ($199/month)</option>
+                                    <option value="demo">Schedule a Demo</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your smart home needs..."></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">How quickly can the system be installed?</div>
+                    <div class="faq-answer">
+                        Professional installation typically takes 30-60 minutes for a complete setup. Our one-script deployment handles everything automatically, including Docker, all services, and the Home Assistant dashboard. Same-day installation is available in select areas.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I really run everything locally without cloud?</div>
+                    <div class="faq-answer">
+                        Absolutely! The Pro and Enterprise tiers support 100% local processing. All AI inference (LLM, speech recognition, video analysis) can run entirely on your NVIDIA Jetson device. Your data never leaves your network. You can also use cloud-assisted mode for faster responses when desired.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What devices are compatible?</div>
+                    <div class="faq-answer">
+                        We support 2,000+ devices through Home Assistant integration including: Ring cameras, smart lights (Philips Hue, LIFX, etc.), thermostats, door locks, sensors, TVs, gaming consoles (PS5, Xbox), and more. Our auto-discovery feature finds devices automatically.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How much does cloud AI usage cost?</div>
+                    <div class="faq-answer">
+                        Cloud costs are included in your monthly subscription. For reference, typical usage is $0.50-$4/month depending on query volume. Light users (50 queries/day) average under $1/month. Image generation costs $0.003 per image. We handle billing - you just enjoy the service.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What happens if my internet goes down?</div>
+                    <div class="faq-answer">
+                        The system automatically falls back to local AI models (Ollama Llama 3.2 3B or 8B). All core functions continue working: voice control, device control, automations, and camera monitoring. Cloud-dependent features like Gemini video analysis won't work until internet is restored, but cached data remains accessible.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I access my system remotely?</div>
+                    <div class="faq-answer">
+                        Yes! We use Tailscale VPN for secure, encrypted remote access from anywhere. Works over cellular, WiFi, or roaming. No port forwarding needed - works even behind CGNAT/double NAT. Voice control works remotely via HTTPS. Access from phones, tablets, or computers.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What kind of support do you offer?</div>
+                    <div class="faq-answer">
+                        Entry tier: Email support (48hr response). Pro tier: Priority email (24hr) + live chat. Enterprise: Phone support + remote troubleshooting + dedicated account manager. All tiers get access to documentation, video tutorials, and community forum.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is there a contract or can I cancel anytime?</div>
+                    <div class="faq-answer">
+                        No long-term contracts required. Cancel anytime with 30 days notice. You own the hardware (Jetson device), so you can continue running the system offline even after canceling. We'll provide export instructions for your data and configurations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-subtitle">Schedule a demo or choose your plan today</p>
+                <div class="cta-buttons">
+                    <a href="../index.html#pricing" class="btn btn-primary btn-large">View Pricing</a>
+                    <a href="#contact-form" class="btn btn-secondary btn-large">Schedule Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 5L5 20V45H20V30H30V45H45V20L25 5Z" fill="url(#logoGradient2)"/>
+                            <circle cx="25" cy="22" r="3" fill="#fff"/>
+                            <defs>
+                                <linearGradient id="logoGradient2" x1="5" y1="5" x2="45" y2="45">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="brand-name">AI SmartHome</span>
+                    </div>
+                    <p class="footer-description">Next-generation smart home automation powered by NVIDIA Jetson and cutting-edge AI.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#features">Features</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#pricing">Pricing</a></li>
+                        <li><a href="../index.html#tech-stack">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI SmartHome Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <button id="chatbot-toggle" class="chatbot-toggle">
+            <svg class="chat-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M8 9h8M8 13h6m-7 4h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v8a2 2 0 002 2zm0 0l-3 3v-3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="close-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">
+                <h3>AI Assistant</h3>
+                <p>Ask me anything about our smart home system</p>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        👋 Hello! I can help answer questions about pricing, features, installation, and more. What would you like to know?
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input-field" placeholder="Type your question..." />
+                <button id="chatbot-send">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const wasActive = item.classList.contains('active');
+
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't active
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Show success message
+            document.getElementById('success-message').classList.add('show');
+
+            // Reset form
+            e.target.reset();
+
+            // Scroll to success message
+            document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('success-message').classList.remove('show');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

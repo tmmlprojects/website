@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AI SmartHome Solutions</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .about-hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-content {
+            padding: 4rem 0;
+        }
+
+        .story-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .story-image {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 20px;
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+        }
+
+        .story-image svg {
+            width: 200px;
+            height: 200px;
+            color: white;
+        }
+
+        .story-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .story-text p {
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .value-description {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .team-section {
+            background: #f7fafc;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-box .number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-box .label {
+            color: var(--gray);
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .story-section {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
+                    <path d="M25 5L5 20V45H20V30H30V45H45V20L25 5Z" fill="url(#logoGradient)"/>
+                    <circle cx="25" cy="22" r="3" fill="#fff"/>
+                    <defs>
+                        <linearGradient id="logoGradient" x1="5" y1="5" x2="45" y2="45">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="brand-name">AI SmartHome</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#features" class="nav-link">Features</a></li>
+                <li><a href="../index.html#services" class="nav-link">Services</a></li>
+                <li><a href="../index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link btn-contact">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>Building the Future of Smart Homes</h1>
+            <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Privacy-first AI automation that puts you in control</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="about-content">
+        <div class="container">
+            <div class="story-section">
+                <div class="story-image">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L2 7V17C2 17 2 22 12 22C22 22 22 17 22 17V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <circle cx="12" cy="11" r="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 14v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>
+                        AI SmartHome Solutions was born from a simple realization: existing smart home systems force you to choose between convenience and privacy. Cloud services are fast but compromise your data. Local solutions are private but slow and complicated.
+                    </p>
+                    <p>
+                        We built a better way. Leveraging NVIDIA Jetson's powerful GPU acceleration and cutting-edge AI models like Cerebras Llama 70B and Gemini 2.5 Flash, we created a system that delivers 0.37-second AI responses with the option to run 100% locally.
+                    </p>
+                    <p>
+                        Today, we're pioneering the next generation of smart home automation - one that's faster, smarter, and more private than anything that came before.
+                    </p>
+                </div>
+            </div>
+
+            <div class="story-section" style="flex-direction: row-reverse;">
+                <div class="story-image">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="story-text">
+                    <h2>Our Mission</h2>
+                    <p>
+                        Empower homeowners with enterprise-grade AI technology that's accessible, private, and continuously learning. We believe smart homes should adapt to you - not the other way around.
+                    </p>
+                    <p>
+                        Our three-tier intelligence system learns your patterns, getting faster and more personalized over time. We're committed to open source foundations, transparent pricing, and giving you complete control over your data.
+                    </p>
+                    <p>
+                        Whether you choose cloud-assisted speed or 100% local privacy, you deserve both cutting-edge performance and peace of mind.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section style="background: #f7fafc; padding: 4rem 0;">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="number">0.37s</div>
+                    <div class="label">AI Response Time</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">99.5%</div>
+                    <div class="label">Uptime SLA</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">100%</div>
+                    <div class="label">Privacy Option</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">30+</div>
+                    <div class="label">Integrations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="about-content">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-subtitle">The principles that guide everything we build</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🔒</div>
+                    <h3 class="value-title">Privacy First</h3>
+                    <p class="value-description">
+                        Your data belongs to you. We offer 100% local processing options and never sell or share your information. End-to-end encryption is standard, not optional.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3 class="value-title">Performance Obsessed</h3>
+                    <p class="value-description">
+                        Sub-second AI responses aren't a goal - they're a requirement. We constantly optimize to deliver the fastest smart home experience possible.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🧠</div>
+                    <h3 class="value-title">Always Learning</h3>
+                    <p class="value-description">
+                        Our three-tier intelligence system gets smarter with every interaction. Your smart home should evolve with your lifestyle.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌐</div>
+                    <h3 class="value-title">Open & Transparent</h3>
+                    <p class="value-description">
+                        Built on open source foundations. No vendor lock-in, no hidden fees, no surprises. You own your system completely.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3 class="value-title">Enterprise Quality</h3>
+                    <p class="value-description">
+                        Professional-grade hardware, 99.5% uptime SLA, and enterprise support - at consumer-friendly prices.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3 class="value-title">Customer Success</h3>
+                    <p class="value-description">
+                        We succeed when you succeed. From white-glove installation to 24/7 support, we're here to help every step of the way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powered by Industry Leaders</h2>
+                <p class="section-subtitle">We partner with the best to deliver exceptional experiences</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🟢</div>
+                    <h3 class="value-title">NVIDIA Jetson</h3>
+                    <p class="value-description">
+                        Enterprise-grade GPU acceleration powers our AI workloads with energy efficiency that keeps costs low.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🧠</div>
+                    <h3 class="value-title">Cerebras AI</h3>
+                    <p class="value-description">
+                        The world's fastest LLM inference (0.37s) gives you ChatGPT-quality responses 10x faster.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">👁️</div>
+                    <h3 class="value-title">Google Gemini</h3>
+                    <p class="value-description">
+                        State-of-the-art computer vision analyzes your camera footage with human-level understanding.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🏠</div>
+                    <h3 class="value-title">Home Assistant</h3>
+                    <p class="value-description">
+                        Open source foundation ensures compatibility with 2,000+ devices and no vendor lock-in.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Join Us?</h2>
+                <p class="cta-subtitle">Experience the future of smart home automation</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Get Started</a>
+                    <a href="../index.html#features" class="btn btn-secondary btn-large">View Features</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 5L5 20V45H20V30H30V45H45V20L25 5Z" fill="url(#logoGradient2)"/>
+                            <circle cx="25" cy="22" r="3" fill="#fff"/>
+                            <defs>
+                                <linearGradient id="logoGradient2" x1="5" y1="5" x2="45" y2="45">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="brand-name">AI SmartHome</span>
+                    </div>
+                    <p class="footer-description">Next-generation smart home automation powered by NVIDIA Jetson and cutting-edge AI.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#features">Features</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#pricing">Pricing</a></li>
+                        <li><a href="../index.html#tech-stack">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI SmartHome Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

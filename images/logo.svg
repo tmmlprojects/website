@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f093fb" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#764ba2" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Glow effect -->
+  <circle cx="100" cy="100" r="90" fill="url(#glowGradient)" opacity="0.5"/>
+
+  <!-- House shape -->
+  <path d="M100 20 L20 80 V180 H80 V120 H120 V180 H180 V80 L100 20Z" fill="url(#logoGradient)"/>
+
+  <!-- AI Brain/Circuit icon in center -->
+  <circle cx="100" cy="88" r="12" fill="white"/>
+  <path d="M88 88 L76 88 M112 88 L124 88 M100 76 L100 64 M100 100 L100 112"
+        stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Smart dots (corners) -->
+  <circle cx="60" cy="100" r="4" fill="white" opacity="0.8"/>
+  <circle cx="140" cy="100" r="4" fill="white" opacity="0.8"/>
+  <circle cx="100" cy="140" r="4" fill="white" opacity="0.8"/>
+
+  <!-- Connection lines (circuit pattern) -->
+  <path d="M60 100 L88 88 M140 100 L112 88 M100 112 L100 140"
+        stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+</svg>

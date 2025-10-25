@@ -1,0 +1,58 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brainGradient" x1="50" y1="50" x2="250" y2="250">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f093fb" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#764ba2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Glow background -->
+  <circle cx="150" cy="150" r="120" fill="url(#glowGradient)"/>
+
+  <!-- Brain outline -->
+  <path d="M150 60 C120 60 95 75 85 100 C75 100 65 110 65 125 C65 140 70 150 80 155
+           C75 165 75 180 85 195 C95 210 110 220 130 220 C135 235 145 245 160 245
+           C175 245 185 235 190 220 C210 220 225 210 235 195 C245 180 245 165 240 155
+           C250 150 255 140 255 125 C255 110 245 100 235 100 C225 75 200 60 170 60
+           C165 55 158 60 150 60 Z"
+        fill="url(#brainGradient)" opacity="0.9"/>
+
+  <!-- Circuit pattern overlay -->
+  <g stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <!-- Left hemisphere circuits -->
+    <path d="M100 120 L120 110 L120 90"/>
+    <circle cx="120" cy="90" r="4" fill="white"/>
+    <path d="M90 150 L110 145 L130 150"/>
+    <circle cx="130" cy="150" r="4" fill="white"/>
+    <path d="M105 180 L115 175 L125 185"/>
+    <circle cx="125" cy="185" r="4" fill="white"/>
+
+    <!-- Right hemisphere circuits -->
+    <path d="M200 120 L180 110 L180 90"/>
+    <circle cx="180" cy="90" r="4" fill="white"/>
+    <path d="M210 150 L190 145 L170 150"/>
+    <circle cx="170" cy="150" r="4" fill="white"/>
+    <path d="M195 180 L185 175 L175 185"/>
+    <circle cx="175" cy="185" r="4" fill="white"/>
+
+    <!-- Central processing unit -->
+    <circle cx="150" cy="140" r="8" fill="white"/>
+    <path d="M150 132 L150 120 M150 148 L150 160 M142 140 L130 140 M158 140 L170 140"/>
+  </g>
+
+  <!-- Neural connections -->
+  <g stroke="#f093fb" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.5">
+    <path d="M120 90 L150 140"/>
+    <path d="M180 90 L150 140"/>
+    <path d="M130 150 L150 140"/>
+    <path d="M170 150 L150 140"/>
+  </g>
+
+  <!-- Pulse effect circles -->
+  <circle cx="150" cy="140" r="20" stroke="#f093fb" stroke-width="2" fill="none" opacity="0.3"/>
+  <circle cx="150" cy="140" r="30" stroke="#667eea" stroke-width="2" fill="none" opacity="0.2"/>
+</svg>

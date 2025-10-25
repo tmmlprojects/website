@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | AI SmartHome Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .error-content {
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 1rem;
+            background: white;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 0.9;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .error-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-btn {
+            padding: 1rem 2rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .error-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .error-btn.secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .error-btn.secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        .error-icon {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 2rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <svg class="error-icon" viewBox="0 0 200 200" fill="none">
+                <defs>
+                    <linearGradient id="houseGradient404" x1="100" y1="20" x2="100" y2="180">
+                        <stop offset="0%" stop-color="white"/>
+                        <stop offset="100%" stop-color="rgba(255,255,255,0.5)"/>
+                    </linearGradient>
+                </defs>
+                <path d="M100 20 L20 80 V180 H80 V120 H120 V180 H180 V80 L100 20Z" fill="url(#houseGradient404)"/>
+                <circle cx="100" cy="88" r="12" fill="#667eea"/>
+                <path d="M88 88 L76 88 M112 88 L124 88" stroke="#667eea" stroke-width="3" stroke-linecap="round"/>
+                <!-- Confused/sad face -->
+                <path d="M80 140 C85 135 95 135 100 135 C105 135 115 135 120 140"
+                      stroke="#667eea" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <circle cx="85" cy="110" r="4" fill="#667eea"/>
+                <circle cx="115" cy="110" r="4" fill="#667eea"/>
+            </svg>
+
+            <div class="error-code">404</div>
+            <h1 class="error-title">Oops! Page Not Found</h1>
+            <p class="error-description">
+                The page you're looking for seems to have wandered off. Even our AI couldn't locate it!
+                Don't worry though - our smart home is still here to help.
+            </p>
+            <div class="error-buttons">
+                <a href="index.html" class="error-btn">Go Home</a>
+                <a href="pages/contact.html" class="error-btn secondary">Contact Support</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Log 404 for analytics (optional)
+        console.log('404 Error - Page not found:', window.location.href);
+    </script>
+</body>
+</html>

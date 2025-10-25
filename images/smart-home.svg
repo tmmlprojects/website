@@ -1,0 +1,127 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="houseGradient" x1="200" y1="80" x2="200" y2="320">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <radialGradient id="connectionGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f093fb" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#764ba2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Central glow -->
+  <circle cx="200" cy="200" r="150" fill="url(#connectionGlow)"/>
+
+  <!-- Main house -->
+  <g opacity="0.95">
+    <!-- House base -->
+    <rect x="140" y="200" width="120" height="120" fill="url(#houseGradient)" rx="5"/>
+
+    <!-- Roof -->
+    <path d="M130 200 L200 140 L270 200 Z" fill="url(#houseGradient)"/>
+
+    <!-- Door -->
+    <rect x="180" y="260" width="40" height="60" fill="white" opacity="0.9" rx="3"/>
+    <circle cx="210" cy="290" r="3" fill="#667eea"/>
+
+    <!-- Windows -->
+    <rect x="155" y="220" width="25" height="25" fill="white" opacity="0.8" rx="2"/>
+    <rect x="220" y="220" width="25" height="25" fill="white" opacity="0.8" rx="2"/>
+    <path d="M167.5 220 V245 M155 232.5 H180" stroke="#667eea" stroke-width="1.5"/>
+    <path d="M232.5 220 V245 M220 232.5 H245" stroke="#667eea" stroke-width="1.5"/>
+
+    <!-- Chimney -->
+    <rect x="230" y="160" width="20" height="40" fill="url(#houseGradient)" opacity="0.8"/>
+  </g>
+
+  <!-- Smart hub (center of house) -->
+  <circle cx="200" cy="200" r="12" fill="white" stroke="#667eea" stroke-width="3"/>
+  <circle cx="200" cy="200" r="5" fill="#667eea"/>
+
+  <!-- Connected smart devices -->
+
+  <!-- Camera (top left) -->
+  <g transform="translate(100, 100)">
+    <circle r="25" fill="white" stroke="#667eea" stroke-width="2"/>
+    <rect x="-8" y="-8" width="16" height="16" rx="2" fill="none" stroke="#667eea" stroke-width="2"/>
+    <circle r="5" fill="#764ba2"/>
+    <path d="M-12 -12 L-18 -18" stroke="#667eea" stroke-width="2"/>
+  </g>
+
+  <!-- Light bulb (top right) -->
+  <g transform="translate(300, 100)">
+    <circle r="25" fill="white" stroke="#667eea" stroke-width="2"/>
+    <circle cx="0" cy="-3" r="7" fill="none" stroke="#764ba2" stroke-width="2"/>
+    <path d="M-5 4 L5 4 M-4 7 L4 7 M-2 10 L2 10" stroke="#764ba2" stroke-width="2"/>
+    <path d="M-7 -3 L-10 -3 M7 -3 L10 -3 M0 -10 L0 -13 M-5 -8 L-7 -10 M5 -8 L7 -10"
+          stroke="#f093fb" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Thermostat (bottom left) -->
+  <g transform="translate(100, 300)">
+    <circle r="25" fill="white" stroke="#667eea" stroke-width="2"/>
+    <circle r="12" fill="none" stroke="#764ba2" stroke-width="2"/>
+    <path d="M0 -12 L0 -6 L4 0" stroke="#764ba2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-8 -8 L-10 -10 M8 -8 L10 -10 M-8 8 L-10 10 M8 8 L10 10"
+          stroke="#f093fb" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Lock (bottom right) -->
+  <g transform="translate(300, 300)">
+    <circle r="25" fill="white" stroke="#667eea" stroke-width="2"/>
+    <rect x="-6" y="0" width="12" height="8" rx="1" fill="#764ba2"/>
+    <path d="M-4 0 V-3 C-4 -5 -2 -7 0 -7 C2 -7 4 -5 4 -3 V0"
+          stroke="#764ba2" stroke-width="2" fill="none"/>
+    <circle cy="3" r="1.5" fill="white"/>
+  </g>
+
+  <!-- Voice assistant (left) -->
+  <g transform="translate(50, 200)">
+    <circle r="20" fill="white" stroke="#667eea" stroke-width="2"/>
+    <path d="M0 -8 L0 8" stroke="#764ba2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-5 -6 L-5 6" stroke="#764ba2" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <path d="M5 -6 L5 6" stroke="#764ba2" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <path d="M-9 -4 L-9 4" stroke="#f093fb" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M9 -4 L9 4" stroke="#f093fb" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Sensor (right) -->
+  <g transform="translate(350, 200)">
+    <circle r="20" fill="white" stroke="#667eea" stroke-width="2"/>
+    <circle r="8" fill="none" stroke="#764ba2" stroke-width="2"/>
+    <circle r="3" fill="#764ba2"/>
+    <path d="M-12 0 C-12 0 -8 -4 -8 -8 M12 0 C12 0 8 -4 8 -8"
+          stroke="#f093fb" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Connection lines -->
+  <g stroke="#667eea" stroke-width="2" stroke-dasharray="4 4" opacity="0.4">
+    <path d="M200 200 L100 100"/>
+    <path d="M200 200 L300 100"/>
+    <path d="M200 200 L100 300"/>
+    <path d="M200 200 L300 300"/>
+    <path d="M200 200 L50 200"/>
+    <path d="M200 200 L350 200"/>
+  </g>
+
+  <!-- Data flow pulses (animated in concept) -->
+  <g fill="#f093fb" opacity="0.6">
+    <circle cx="150" cy="150" r="3"/>
+    <circle cx="250" cy="150" r="3"/>
+    <circle cx="150" cy="250" r="3"/>
+    <circle cx="250" cy="250" r="3"/>
+    <circle cx="125" cy="200" r="3"/>
+    <circle cx="275" cy="200" r="3"/>
+  </g>
+
+  <!-- WiFi signal from hub -->
+  <g transform="translate(200, 200)" opacity="0.3">
+    <path d="M-15 -15 C-15 -15 -10 -20 0 -20 C10 -20 15 -15 15 -15"
+          stroke="#f093fb" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M-10 -10 C-10 -10 -6 -13 0 -13 C6 -13 10 -10 10 -10"
+          stroke="#f093fb" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M-5 -5 C-5 -5 -3 -7 0 -7 C3 -7 5 -5 5 -5"
+          stroke="#f093fb" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="150" y1="40" x2="150" y2="260">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="lockGradient" x1="150" y1="120" x2="150" y2="180">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f093fb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield background glow -->
+  <path d="M150 40 L70 70 C70 70 60 150 70 200 C80 250 150 270 150 270
+           C150 270 220 250 230 200 C240 150 230 70 230 70 L150 40 Z"
+        fill="url(#shieldGradient)" opacity="0.1" transform="scale(1.1) translate(-15, -10)"/>
+
+  <!-- Main shield -->
+  <path d="M150 40 L70 70 C70 70 60 150 70 200 C80 250 150 270 150 270
+           C150 270 220 250 230 200 C240 150 230 70 230 70 L150 40 Z"
+        fill="url(#shieldGradient)" stroke="white" stroke-width="3" opacity="0.95"/>
+
+  <!-- Shield inner border -->
+  <path d="M150 55 L85 80 C85 80 77 150 85 195 C93 235 150 253 150 253
+           C150 253 207 235 215 195 C223 150 215 80 215 80 L150 55 Z"
+        fill="none" stroke="white" stroke-width="2" opacity="0.3"/>
+
+  <!-- Lock body -->
+  <rect x="130" y="150" width="40" height="35" rx="3" fill="url(#lockGradient)"/>
+
+  <!-- Lock shackle -->
+  <path d="M140 150 V135 C140 135 140 120 150 120 C160 120 160 135 160 135 V150"
+        stroke="url(#lockGradient)" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Keyhole -->
+  <circle cx="150" cy="162" r="4" fill="#667eea"/>
+  <rect x="148" y="165" width="4" height="10" rx="1" fill="#667eea"/>
+
+  <!-- Circuit pattern around lock -->
+  <g stroke="white" stroke-width="1.5" opacity="0.6">
+    <circle cx="110" cy="130" r="3" fill="white"/>
+    <path d="M113 130 L125 140"/>
+
+    <circle cx="190" cy="130" r="3" fill="white"/>
+    <path d="M187 130 L175 140"/>
+
+    <circle cx="110" cy="175" r="3" fill="white"/>
+    <path d="M113 175 L125 165"/>
+
+    <circle cx="190" cy="175" r="3" fill="white"/>
+    <path d="M187 175 L175 165"/>
+  </g>
+
+  <!-- Data encryption lines -->
+  <g opacity="0.3">
+    <path d="M90 110 L95 110" stroke="white" stroke-width="2"/>
+    <path d="M100 110 L110 110" stroke="white" stroke-width="2"/>
+    <path d="M90 120 L100 120" stroke="white" stroke-width="2"/>
+    <path d="M105 120 L115 120" stroke="white" stroke-width="2"/>
+
+    <path d="M190 110 L200 110" stroke="white" stroke-width="2"/>
+    <path d="M205 110 L210 110" stroke="white" stroke-width="2"/>
+    <path d="M185 120 L195 120" stroke="white" stroke-width="2"/>
+    <path d="M200 120 L210 120" stroke="white" stroke-width="2"/>
+  </g>
+
+  <!-- Checkmark (verified/secure) -->
+  <g transform="translate(150, 220)">
+    <circle r="15" fill="white" opacity="0.9"/>
+    <path d="M-5 0 L-2 5 L6 -5" stroke="#48bb78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
