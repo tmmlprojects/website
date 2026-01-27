@@ -215,7 +215,7 @@ Success: #48bb78
 7. FAL.ai Image Generation (port 5000)
 
 **AI Models (8):**
-- Cerebras Llama 3.3 70B (0.37s)
+- Cerebras GPT-OSS-120B (0.37s)
 - Cerebras Qwen 3 235B (0.84s)
 - OpenAI GPT-4o (fallback)
 - Gemini 2.5 Flash (video analysis)

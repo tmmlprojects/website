@@ -1436,7 +1436,22 @@ section {
 .pricing-amount {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-monthly {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 2rem;
+}
+
+.pricing-monthly .amount {
+    font-size: 2rem;
+    color: var(--cyber-blue);
+}
+
+.pricing-monthly .period {
+    color: var(--cyber-text-muted);
 }
 
 .currency {

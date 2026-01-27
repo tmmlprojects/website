@@ -73,55 +73,107 @@ Your network security shouldn't depend on trusting firmware from nations with a 
 
 ---
 
-## Tier Structure
+## Hardware + Subscription Model
 
-### 🥉 Smart Home Enthusiast - $5/month
+### Early Access Pricing (Patreon/Shopify)
 
-**What You Get:**
+**The Deal:** Buy the hardware at cost + 20% markup. Pay $29.99/month for cloud AI access.
+
+**Why this model?**
+- ✅ You **own** the hardware (not renting)
+- ✅ Monthly fee covers API costs (~$20) + small profit (~$10)
+- ✅ Hardware keeps working locally even if you cancel
+- ✅ Help fund active development (software isn't finished)
+- ✅ Honest pricing for early adopters
+
+---
+
+### 🥉 Starter Tier - Orin Nano Super 8GB
+
+**Hardware: $299 (one-time)**
+- NVIDIA Jetson Orin Nano Super 8GB
+- 1024 CUDA cores, 67 TOPS AI performance
+- 15W power consumption
+- Pre-configured with custom software stack
+
+**Subscription: $29.99/month**
+- Unlimited cloud AI (Cerebras, Gemini, Groq, ElevenLabs)
+- Voice assistant ("Hey Jarvis")
+- Camera video analysis
+- Natural language queries
+- Local 3B fallback model
+- Thread/Matter + Zigbee coordinator
+- Automatic updates
+- Discord community support
+
+**Early Access Notice:** Software in active development. Expect bugs, help shape the product.
+
+---
+
+### 🥈 Pro Tier - Orin NX 16GB (Most Popular)
+
+**Hardware: $1,055 (one-time)**
+- NVIDIA Jetson Orin NX 16GB
+- 1024 CUDA cores, 100 TOPS AI performance
+- 25W power consumption
+- Pre-configured with custom software stack
+
+**Subscription: $29.99/month**
+- Everything in Starter tier, plus:
+- 100% local AI capable (offline mode)
+- Local 8B model (works without internet)
+- Image generation (Flux models)
+- More cameras (8+ supported)
+- Pet/person recognition
+- Custom automations
+- Priority support
+
+**Why this tier:** Sweet spot for enthusiasts who want full local capability.
+
+---
+
+### 🥇 Ultimate Tier - AGX Orin 64GB
+
+**Hardware: $2,399 (one-time)**
+- NVIDIA Jetson AGX Orin 64GB
+- 2048 CUDA cores, 275 TOPS AI performance
+- 60W power consumption
+- Pre-configured with custom software stack
+
+**Subscription: $29.99/month**
+- Everything in Pro tier, plus:
+- Larger local models (13B+)
+- Multi-property capable
+- Unlimited cameras
+- Advanced AI training
+- Commercial deployment ready
+- White-label options
+- Dedicated support channel
+
+**Why this tier:** For commercial deployments, rental properties, or multi-unit management.
+
+---
+
+### 💎 Patreon Support Tiers (No Hardware)
+
+**For those who want to support development without buying hardware:**
+
+**Supporter - $5/month**
 - Early access to development updates
-- Behind-the-scenes technical blog posts
 - Discord community access
 - Vote on feature priorities
 
-**Why This Matters:** Your support funds development time and helps us reach the minimum viable product faster.
-
----
-
-### 🥈 Hardware Backer - $15/month
-
-**Everything in Enthusiast, plus:**
+**Contributor - $15/month**
+- Everything in Supporter, plus:
 - Detailed hardware guides and BOMs
-- Pre-configured SD card images (when available)
-- Priority support in Discord
-- Beta testing access for new features
+- Beta testing access
+- Priority Discord support
 
-**Why This Matters:** You're helping fund the actual hardware we test with—cameras, sensors, Zigbee devices, Jetson prototypes.
-
----
-
-### 🥇 AI Architect - $50/month
-
-**Everything in Hardware Backer, plus:**
+**Architect - $50/month**
+- Everything in Contributor, plus:
 - 1-on-1 setup consultation (1 hour/month)
 - Custom feature requests (within scope)
 - Your name in the credits
-- Access to fleet management tools
-- Priority bug fixes for your use cases
-
-**Why This Matters:** Direct engineering time for your specific needs. Your use cases inform the roadmap.
-
----
-
-### 💎 Enterprise Partner - $200/month
-
-**Everything in AI Architect, plus:**
-- Dedicated support channel
-- Custom deployment scripts for your environment
-- Multi-site management tools
-- Commercial license for client installations
-- Quarterly video calls with the dev team
-
-**Why This Matters:** You're running this in production environments (Airbnb, rental properties, small business). You need enterprise reliability and we need your feedback to build it.
 
 ---
 

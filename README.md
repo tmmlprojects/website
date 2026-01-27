@@ -209,7 +209,7 @@ docker run -p 8080:80 ai-smarthome-website
 
 ### Core System Capabilities
 ✅ **Three-Tier Intelligence System** (v9.0)
-✅ **Ultra-Fast Cloud AI** (0.37s Cerebras Llama 70B)
+✅ **Ultra-Fast Cloud AI** (0.37s Cerebras GPT-OSS-120B)
 ✅ **AI Video Analysis** (Gemini 2.5 Flash with caching)
 ✅ **Privacy-First Architecture** (100% local option)
 ✅ **Advanced Voice Control** (Whisper STT, Piper/ElevenLabs TTS)
@@ -224,7 +224,7 @@ docker run -p 8080:80 ai-smarthome-website
 ✅ **Home Assistant** core platform
 
 ### AI Models
-✅ **Cerebras Llama 3.3 70B** (primary LLM)
+✅ **Cerebras GPT-OSS-120B** (primary LLM)
 ✅ **Cerebras Qwen 3 235B** (advanced reasoning)
 ✅ **Google Gemini 2.5 Flash** (video analysis)
 ✅ **FAL.ai Flux Schnell** (image generation)
@@ -240,7 +240,7 @@ docker run -p 8080:80 ai-smarthome-website
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| AI Response Time | 0.37s | Cerebras Llama 70B |
+| AI Response Time | 0.37s | Cerebras GPT-OSS-120B |
 | Image Generation | 0.5-0.7s | FAL.ai Flux |
 | Voice Pipeline | <3s | End-to-end STT+LLM+TTS |
 | Video Cache Lookup | <0.5s | Batch retrieval for 10 events |
