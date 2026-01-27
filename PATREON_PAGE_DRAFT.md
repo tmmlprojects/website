@@ -4,7 +4,7 @@
 
 **The AI Revolution, Now in Your Home**
 
-Building the only smart home platform powered by NVIDIA Jetson—the same AI technology running ChatGPT datacenters and Tesla's self-driving systems. American hardware, zero Chinese dependencies, 100% local processing when you want it.
+Building the only smart home platform powered by NVIDIA Jetson—the same AI technology running ChatGPT datacenters and Tesla's self-driving systems. American hardware, zero reliance on foreign state sponsors of cyberterrorism, 100% local processing when you want it.
 
 ---
 
@@ -14,7 +14,7 @@ Building the only smart home platform powered by NVIDIA Jetson—the same AI tec
 
 You've been hearing about the AI revolution everywhere. NVIDIA GPUs powering ChatGPT. Tesla's autonomous driving. Google's Gemini vision models. Cerebras Systems' lightning-fast AI inference. **That same technology stack is now coming to smart homes**—but done right.
 
-Not a $20/month cloud subscription that stops working when your internet goes down. Not a Chinese IoT device phoning home to servers you don't control. This is **your AI, your data, your hardware, your rules**.
+Not a $20/month cloud subscription that stops working when your internet goes down. Not an IoT device from foreign state sponsors of cyberterrorism phoning home to servers you don't control. This is **your AI, your data, your hardware, your rules**.
 
 ### Why NVIDIA Jetson?
 
@@ -35,9 +35,9 @@ We're seeing massive security vulnerabilities in consumer IoT devices, almost al
 - **NVIDIA Jetson**: American company, American-designed silicon
 - **Silicon Labs coordinators**: Multi-protocol (Thread/Matter + Zigbee), Austin, TX
 - **NDAA-compliant cameras**: Amcrest (USA), Reolink (vetted), Axis (Sweden)
-- **Zero Chinese hardware** in the core stack
+- **Zero hardware from foreign state sponsors of cyberterrorism** in the core stack
 
-Your network security shouldn't depend on trusting firmware from adversarial nations.
+Your network security shouldn't depend on trusting firmware from nations with a documented history of malicious backdoors and state-sponsored hacking.
 
 ---
 
@@ -280,4 +280,4 @@ But it has to be done right:
 
 *Built with NVIDIA Jetson • Cerebras AI • Google Gemini • OpenAI Architecture • Home Assistant*
 
-*American-designed hardware • Zero Chinese dependencies • Privacy-first architecture*
+*American-designed hardware • Zero reliance on state sponsors of cyberterrorism • Privacy-first architecture*
