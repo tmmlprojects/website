@@ -110,47 +110,48 @@ Your network security shouldn't depend on trusting firmware from nations with a 
 
 ---
 
-### 🥈 Pro Tier - Orin NX 16GB (Most Popular)
-
-**Hardware: $1,055 (one-time)**
-- NVIDIA Jetson Orin NX 16GB
-- 1024 CUDA cores, 100 TOPS AI performance
-- 25W power consumption
-- Pre-configured with custom software stack
-
-**Subscription: $29.99/month**
-- Everything in Starter tier, plus:
-- 100% local AI capable (offline mode)
-- Local 8B model (works without internet)
-- Image generation (Flux models)
-- More cameras (8+ supported)
-- Pet/person recognition
-- Custom automations
-- Priority support
-
-**Why this tier:** Sweet spot for enthusiasts who want full local capability.
-
----
-
-### 🥇 Ultimate Tier - AGX Orin 64GB
+### 🥈 Pro Tier - AGX Orin 32GB (Most Popular)
 
 **Hardware: $2,399 (one-time)**
-- NVIDIA Jetson AGX Orin 64GB
+- NVIDIA Jetson AGX Orin 32GB
 - 2048 CUDA cores, 275 TOPS AI performance
 - 60W power consumption
 - Pre-configured with custom software stack
 
 **Subscription: $29.99/month**
+- Everything in Starter tier, plus:
+- 100% local AI capable (offline mode)
+- Local 8B-13B models (works without internet)
+- Image generation (Flux models)
+- More cameras (12+ supported)
+- Pet/person recognition
+- Custom automations
+- Priority support
+
+**Why this tier:** Sweet spot for enthusiasts who want full local capability with serious GPU power.
+
+---
+
+### 🥇 Ultimate Tier - AGX Thor 128GB
+
+**Hardware: $4,199 (one-time)**
+- NVIDIA Jetson AGX Thor 128GB (Blackwell GPU)
+- 2560 CUDA cores, 2,070 TOPS AI performance
+- 130W power consumption
+- Pre-configured with custom software stack
+
+**Subscription: $29.99/month**
 - Everything in Pro tier, plus:
-- Larger local models (13B+)
+- Largest local models (70B+)
 - Multi-property capable
 - Unlimited cameras
 - Advanced AI training
+- Humanoid robotics ready
 - Commercial deployment ready
 - White-label options
 - Dedicated support channel
 
-**Why this tier:** For commercial deployments, rental properties, or multi-unit management.
+**Why this tier:** For commercial deployments, rental properties, multi-unit management, or robotics integration. Cutting-edge Blackwell architecture with 7.5x more AI compute than AGX Orin.
 
 ---
 
