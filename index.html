@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI SmartHome Solutions - Next-Gen Home Automation</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>AiHomes - Next-Gen Home Automation</title>
+    <link rel="stylesheet" href="css/style.css?v=20251026-mobile-fix">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -14,30 +14,25 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
-                    <path d="M25 5L5 20V45H20V30H30V45H45V20L25 5Z" fill="url(#logoGradient)"/>
-                    <circle cx="25" cy="22" r="3" fill="#fff"/>
-                    <defs>
-                        <linearGradient id="logoGradient" x1="5" y1="5" x2="45" y2="45">
-                            <stop offset="0%" stop-color="#667eea"/>
-                            <stop offset="100%" stop-color="#764ba2"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <span class="brand-name">AI SmartHome</span>
+                <img src="images/logo2.jpg" alt="AiHomes Logo" class="logo-icon">
+                <span class="brand-name">AiHomes</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#features" class="nav-link">Features</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#robot-addon" class="nav-link">SCOUT Robot <span class="new-badge">NEW</span></a></li>
                 <li><a href="#pricing" class="nav-link">Pricing</a></li>
                 <li><a href="pages/about.html" class="nav-link">About</a></li>
                 <li><a href="pages/contact.html" class="nav-link btn-contact">Contact Us</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="hamburger-wrapper">
+                <span class="hamburger-new-indicator">NEW</span>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -52,24 +47,31 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    The Future of Smart Homes is
-                    <span class="gradient-text">AI-Powered</span>
+                    The AI Revolution,
+                    <span class="gradient-text">Now in Your Home</span>
                 </h1>
+                <div class="hero-logo-container">
+                    <img src="images/logo2.jpg" alt="AiHomes Logo" class="hero-logo">
+                </div>
                 <p class="hero-subtitle">
-                    Ultra-fast AI responses (0.37s), advanced computer vision, natural voice control, and 100% privacy-first architecture. Built on NVIDIA Jetson with cloud-first intelligence and complete offline capability.
+                    The only smart home platform powered by NVIDIA Jetson—the same AI technology behind ChatGPT datacenters and Tesla Autopilot. American-designed GPUs (Santa Clara, CA), zero Chinese hardware dependencies, and 100% local processing capability when you want it. This isn't IoT. This is intelligence.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
                         <div class="stat-number">0.37s</div>
-                        <div class="stat-label">AI Response Time</div>
+                        <div class="stat-label">AI Response</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">100%</div>
-                        <div class="stat-label">Local Privacy Option</div>
+                        <div class="stat-label">Local Option</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">30+</div>
-                        <div class="stat-label">Smart Integrations</div>
+                        <div class="stat-number">GPU</div>
+                        <div class="stat-label">Edge AI Power</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">USA</div>
+                        <div class="stat-label">Hardware Trust</div>
                     </div>
                 </div>
                 <div class="hero-buttons">
@@ -118,30 +120,30 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Cutting-Edge Features</h2>
-                <p class="section-subtitle">Advanced AI capabilities that set us apart from traditional smart home systems</p>
+                <h2 class="section-title">Why NVIDIA Jetson Changes Everything</h2>
+                <p class="section-subtitle">The only smart home platform with dedicated GPU acceleration for real-time AI—not just cloud APIs disguised as "intelligence"</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none">
-                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Three-Tier Intelligence</h3>
-                    <p class="feature-description">Revolutionary learning system that gets smarter over time. Instant pattern matching, learned behaviors, and intelligent LLM reasoning with clarification prompts.</p>
-                    <div class="feature-badge">v9.0 System</div>
+                    <h3 class="feature-title">Powered by NVIDIA—The AI Revolution Leader</h3>
+                    <p class="feature-description">Same GPU architecture powering ChatGPT, self-driving cars, and Fortune 500 AI datacenters—now in your home. NVIDIA Jetson delivers 1024-2048 CUDA cores for real-time vision AI, voice processing, and local LLMs. American-designed silicon (Santa Clara, CA) built by TSMC. This is how the AI revolution comes home.</p>
+                    <div class="feature-badge">NVIDIA Inside</div>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none">
-                            <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Ultra-Fast Cloud AI</h3>
-                    <p class="feature-description">Cerebras Llama 70B delivers 0.37s responses - 10x faster than ChatGPT. Qwen 235B option for complex reasoning. Automatic fallback to local AI when offline.</p>
-                    <div class="feature-badge">0.37s Response</div>
+                    <h3 class="feature-title">Hardware You Can Trust</h3>
+                    <p class="feature-description">NVIDIA Jetson (USA/Taiwan), Silicon Labs Zigbee coordinators (USA), Amcrest cameras (American company). Zero dependency on Chinese IoT hardware with known backdoor vulnerabilities. Your data, your network, your sovereignty.</p>
+                    <div class="feature-badge">Zero-Trust Design</div>
                 </div>
 
                 <div class="feature-card">
@@ -153,9 +155,9 @@
                             <path d="M2 13l3-3 3 3 4-4 8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">AI Video Analysis</h3>
-                    <p class="feature-description">Gemini 2.5 Flash analyzes your Ring camera footage with intelligent caching. Identify people, packages, vehicles, and anomalies. Sub-second cached retrieval.</p>
-                    <div class="feature-badge">Gemini Powered</div>
+                    <h3 class="feature-title">Gemini Vision Camera Analysis</h3>
+                    <p class="feature-description">Multimodal AI understands video context like humans. "Who delivered the Amazon package?" gets detailed descriptions—not just "person detected." Works with Ring doorbells, RTSP cameras, and Frigate NVR. Sub-second cached retrieval for repeat queries.</p>
+                    <div class="feature-badge">Google Gemini</div>
                 </div>
 
                 <div class="feature-card">
@@ -166,9 +168,9 @@
                             <path d="M12 14V20.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Privacy-First Architecture</h3>
-                    <p class="feature-description">Choose 100% local processing or cloud-assisted mode. All data stays on YOUR network. End-to-end encrypted remote access via Tailscale. No vendor data mining.</p>
-                    <div class="feature-badge">Zero Cloud Option</div>
+                    <h3 class="feature-title">Cloud-First with Local Fallback</h3>
+                    <p class="feature-description">Best of both worlds: Cerebras GPT (0.37s) for speed when online, automatic fallback to local Ollama 3B model on Jetson GPU when internet drops. Alexa goes silent when AWS is down—your Jetson-powered home keeps working.</p>
+                    <div class="feature-badge">3-Tier Fallback</div>
                 </div>
 
                 <div class="feature-card">
@@ -177,9 +179,31 @@
                             <path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Advanced Voice Control</h3>
-                    <p class="feature-description">Natural language understanding with Whisper STT. Optional wake-word activation ("Computer"). Dual TTS: Free Piper or premium ElevenLabs. Works from any device.</p>
-                    <div class="feature-badge">Sub-3s Pipeline</div>
+                    <h3 class="feature-title">Wake Word Voice Assistant</h3>
+                    <p class="feature-description">"Hey Jarvis" or "Hey Maya" triggers instant response. Groq Whisper v3 STT (1-2s), ElevenLabs TTS (human-like voices), with local Piper fallback. Multi-turn conversations with 90-day context memory. Say "stop" to interrupt.</p>
+                    <div class="feature-badge">Always Listening</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Three-Tier Intelligence System</h3>
+                    <p class="feature-description">Tier 1: Instant pattern matching (~0.02s) for "turn off lights." Tier 2: Learned behaviors from your vocabulary. Tier 3: Full LLM reasoning (0.37s) for complex queries. Most commands execute before you finish speaking.</p>
+                    <div class="feature-badge">Instant Response</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Thread/Matter + Zigbee: Your Choice</h3>
+                    <p class="feature-description"><strong>Bleeding Edge:</strong> Thread/Matter—Apple, Google, Amazon's next-gen protocol. IPv6 mesh, future-proof. <strong>Battle-Tested:</strong> Zigbee via Silicon Labs EFR32 (USA)—100+ devices, Philips Hue, IKEA compatibility, 1-2 year battery life. Both on one coordinator. You decide.</p>
+                    <div class="feature-badge">Multi-Protocol</div>
                 </div>
 
                 <div class="feature-card">
@@ -191,32 +215,191 @@
                             <circle cx="14" cy="14" r="2" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">AI Image Generation</h3>
-                    <p class="feature-description">FAL.ai Flux Schnell creates images in 0.5-0.7s. Just ask "generate an image of..." - 60x cheaper and 100x faster than competitors. Inline chat display.</p>
-                    <div class="feature-badge">0.5s Generation</div>
+                    <h3 class="feature-title">Visual Automation Builder</h3>
+                    <p class="feature-description">Drag-and-drop triggers, conditions, and actions. Motion detection → Maya voice announcement → light scene. No YAML, no code. Export automations as JSON for version control. Test mode with dry-run simulation.</p>
+                    <div class="feature-badge">No-Code Setup</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Revolution Callout -->
+    <section id="ai-revolution" class="ai-revolution">
+        <div class="container">
+            <div class="ai-revolution-content">
+                <h2 class="revolution-title">You've Been Hearing About the AI Revolution</h2>
+                <p class="revolution-subtitle">NVIDIA GPUs running ChatGPT. Tesla's self-driving AI. Google's Gemini multimodal models.</p>
+                <p class="revolution-text">That same technology stack—<strong>now running in your home</strong>, on hardware you own, analyzing your cameras, understanding your voice, and controlling your devices. Not a cloud service charging $20/month. Not a Chinese IoT box phoning home. <em>Your</em> AI, <em>your</em> data, <em>your</em> control.</p>
+                <div class="revolution-logos">
+                    <div class="revolution-logo-item">
+                        <div class="logo-name">NVIDIA</div>
+                        <div class="logo-detail">Jetson GPUs</div>
+                    </div>
+                    <div class="revolution-logo-item">
+                        <div class="logo-name">Google</div>
+                        <div class="logo-detail">Gemini Vision</div>
+                    </div>
+                    <div class="revolution-logo-item">
+                        <div class="logo-name">Cerebras</div>
+                        <div class="logo-detail">0.37s AI</div>
+                    </div>
+                    <div class="revolution-logo-item">
+                        <div class="logo-name">OpenAI</div>
+                        <div class="logo-detail">ChatGPT Tech</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Trust Section -->
+    <section id="hardware-trust" class="hardware-trust">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built on Hardware You Can Trust</h2>
+                <p class="section-subtitle">Zero dependency on Chinese IoT vendors with known backdoor vulnerabilities</p>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-flag">🇺🇸</div>
+                    <h3 class="trust-title">NVIDIA Corporation</h3>
+                    <p class="trust-origin">Santa Clara, California | Founded 1993</p>
+                    <p class="trust-description">The $3 trillion company powering the AI revolution. NVIDIA Jetson brings datacenter-class GPU architecture to edge devices—designed in Silicon Valley, fabricated by TSMC (Taiwan). Powers ChatGPT infrastructure, autonomous vehicles, and now your smart home. American-owned, American-engineered, zero backdoors.</p>
+                    <ul class="trust-features">
+                        <li>Orin Nano 8GB: $249</li>
+                        <li>Orin NX 16GB: $449</li>
+                        <li>AGX Orin 64GB: $899</li>
+                    </ul>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none">
-                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Auto Device Discovery</h3>
-                    <p class="feature-description">Network scanner automatically finds smart devices. One-click addition to your system. Supports lights, cameras, TVs, sensors, gaming consoles. No manual configuration.</p>
-                    <div class="feature-badge">Zero-Config</div>
+                <div class="trust-card">
+                    <div class="trust-flag">🇺🇸</div>
+                    <h3 class="trust-title">Silicon Labs Multi-Protocol Radio</h3>
+                    <p class="trust-origin">Austin, Texas</p>
+                    <p class="trust-description">EFR32 Mighty Gecko coordinators (USA-made) run both Zigbee and Thread/Matter simultaneously. Choose Apple/Google's bleeding-edge Matter protocol or battle-tested Zigbee (Philips Hue, IKEA). No cloud dependencies, 100% local mesh.</p>
+                    <ul class="trust-features">
+                        <li>USB Coordinator: $17-25</li>
+                        <li>100+ device capacity per protocol</li>
+                        <li>Thread/Matter + Zigbee concurrently</li>
+                    </ul>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none">
-                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                <div class="trust-card">
+                    <div class="trust-flag">🇺🇸 🇰🇷 🇩🇪</div>
+                    <h3 class="trust-title">Trusted Camera Brands</h3>
+                    <p class="trust-origin">USA, South Korea, Germany</p>
+                    <p class="trust-description">Amcrest (USA company, NDAA-compliant), Reolink (Korean HQ), Axis Communications (Sweden). Local RTSP streams—no mandatory cloud uploads to Beijing servers.</p>
+                    <ul class="trust-features">
+                        <li>Ring (Amazon, USA)</li>
+                        <li>Amcrest (NDAA-compliant)</li>
+                        <li>Reolink (South Korea)</li>
+                    </ul>
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-flag">🔒</div>
+                    <h3 class="trust-title">Open Source + Zero Trust Architecture</h3>
+                    <p class="trust-origin">Home Assistant + Docker + Tailscale</p>
+                    <p class="trust-description">Home Assistant is open-source (Apache 2.0 license) with 100% local operation. Docker containers are auditable. Zero Trust remote access via Tailscale VPN—no port forwarding to expose your network. Every connection authenticated and encrypted.</p>
+                    <ul class="trust-features">
+                        <li>Inspect all source code</li>
+                        <li>No telemetry to vendors</li>
+                        <li>Zero Trust VPN (not port forwarding)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Security Architecture Section -->
+            <div class="security-architecture">
+                <h3 class="security-title">Enterprise-Grade Security Architecture</h3>
+                <p class="security-subtitle">The same cybersecurity practices protecting Fortune 500 companies—now defending your home</p>
+
+                <div class="security-grid">
+                    <div class="security-feature">
+                        <div class="security-icon">🛡️</div>
+                        <h4>Zero Trust Network Access</h4>
+                        <p>No port forwarding, no DMZ, no firewall holes. Tailscale VPN creates encrypted WireGuard tunnels with device identity verification. Remote access requires authentication—even from your own phone.</p>
                     </div>
-                    <h3 class="feature-title">Interactive Floor Plans</h3>
-                    <p class="feature-description">Drag-and-drop device positioning. Visual device states with color coding. Multi-floor support. Click devices to control. Positions sync across all your devices.</p>
-                    <div class="feature-badge">Real-Time Sync</div>
+
+                    <div class="security-feature">
+                        <div class="security-icon">🔐</div>
+                        <h4>End-to-End Encryption</h4>
+                        <p>TLS 1.3 for HTTPS (Home Assistant), AES-256 for backups, ChaCha20-Poly1305 for VPN tunnels. API keys stored with chmod 600 permissions. SSL certificates auto-renewed via Let's Encrypt or self-signed.</p>
+                    </div>
+
+                    <div class="security-feature">
+                        <div class="security-icon">💾</div>
+                        <h4>Automated Backup Strategy</h4>
+                        <p><strong>Local:</strong> Daily snapshots to NVMe SSD (7-day rotation). <strong>Optional Cloud:</strong> Encrypted S3 backups (your AWS account, not ours). <strong>Your choice:</strong> 100% airgapped or cloud-replicated. Either way, you own the keys.</p>
+                    </div>
+
+                    <div class="security-feature">
+                        <div class="security-icon">🔄</div>
+                        <h4>Immutable Infrastructure</h4>
+                        <p>Docker containers with SHA256 integrity verification. No SSH access by default—updates via signed container images. System partitions mounted read-only. Compromised container? Redeploy from verified image in 30 seconds.</p>
+                    </div>
+
+                    <div class="security-feature">
+                        <div class="security-icon">👁️</div>
+                        <h4>Privacy-First Logging</h4>
+                        <p>Voice transcripts never logged. Camera footage stays local (or your S3 bucket). Optional fleet analytics with PII scrubbing—IP addresses hashed, names replaced with "PERSON". Opt-in only, disable anytime.</p>
+                    </div>
+
+                    <div class="security-feature">
+                        <div class="security-icon">⚡</div>
+                        <h4>Network Segmentation</h4>
+                        <p>IoT devices on isolated Docker bridge network (172.20.0.0/16). Smart home can't access your laptop. Cameras can't reach the internet without explicit rules. Breach one device? The rest stay protected.</p>
+                    </div>
+                </div>
+
+                <div class="security-comparison">
+                    <h4 class="comparison-subtitle">Storage Options: Your Data, Your Rules</h4>
+                    <div class="storage-options">
+                        <div class="storage-option local-storage">
+                            <h5>🏠 100% Local Storage</h5>
+                            <ul>
+                                <li>All data on your NVMe SSD</li>
+                                <li>Camera recordings: 7-30 days retention</li>
+                                <li>Voice commands: never leave device</li>
+                                <li>Backups: external USB drive or NAS</li>
+                                <li><strong>Best for:</strong> Privacy maximalists, airgap enthusiasts</li>
+                            </ul>
+                        </div>
+                        <div class="storage-option hybrid-storage">
+                            <h5>☁️ Hybrid: Local + Your Cloud</h5>
+                            <ul>
+                                <li>Local NVMe for instant access</li>
+                                <li>Encrypted backups to <em>your</em> AWS S3 (not ours)</li>
+                                <li>Ring cloud for doorbell history (optional)</li>
+                                <li>Frigate local, cloud backups AES-256 encrypted</li>
+                                <li><strong>Best for:</strong> Disaster recovery + remote access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-comparison">
+                <h3 class="comparison-title">Why Hardware Origin Matters</h3>
+                <div class="comparison-grid">
+                    <div class="comparison-item risk">
+                        <h4>⚠️ Chinese IoT Risks</h4>
+                        <ul>
+                            <li>Unencrypted data streams to Chinese servers (Tuya, Wyze incidents)</li>
+                            <li>Hardcoded backdoors (Hikvision CVE-2021-36260)</li>
+                            <li>Firmware updates can enable remote access</li>
+                            <li>National Intelligence Law requires data sharing</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-item safe">
+                        <h4>✅ Our Approach</h4>
+                        <ul>
+                            <li>All compute on NVIDIA hardware (USA/Taiwan)</li>
+                            <li>Zigbee coordinators manufactured in USA</li>
+                            <li>Camera streams stay on local network</li>
+                            <li>Tailscale VPN for remote access (not port forwarding)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -274,73 +457,285 @@
         </div>
     </section>
 
+    <!-- Robot Add-on Section -->
+    <section id="robot-addon" class="robot-addon">
+        <div class="container">
+            <div class="section-header">
+                <div class="addon-badge">Premium Add-On</div>
+                <h2 class="section-title">Meet SCOUT: Your AI-Powered Robot Companion</h2>
+                <p class="section-subtitle">Smart Cognitive Observation & Utility Transport - The ultimate mobile extension of your smart home</p>
+            </div>
+
+            <div class="robot-showcase">
+                <div class="robot-visual">
+                    <div class="robot-icon-large">
+                        <svg viewBox="0 0 200 200" fill="none">
+                            <!-- Robot body -->
+                            <rect x="60" y="80" width="80" height="60" rx="10" fill="url(#robotGradient1)" stroke="#667eea" stroke-width="3"/>
+                            <!-- Head -->
+                            <circle cx="100" cy="60" r="25" fill="url(#robotGradient2)" stroke="#667eea" stroke-width="3"/>
+                            <!-- Eyes -->
+                            <circle cx="90" cy="55" r="5" fill="#fff"/>
+                            <circle cx="110" cy="55" r="5" fill="#fff"/>
+                            <!-- Antenna -->
+                            <line x1="100" y1="35" x2="100" y2="20" stroke="#667eea" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="100" cy="20" r="4" fill="#f093fb"/>
+                            <!-- Wheels -->
+                            <circle cx="75" cy="150" r="15" fill="#2d3748" stroke="#667eea" stroke-width="3"/>
+                            <circle cx="125" cy="150" r="15" fill="#2d3748" stroke="#667eea" stroke-width="3"/>
+                            <!-- Camera -->
+                            <rect x="85" y="70" width="30" height="15" rx="7" fill="#764ba2"/>
+                            <circle cx="100" cy="77" r="4" fill="#fff"/>
+                            <defs>
+                                <linearGradient id="robotGradient1" x1="60" y1="80" x2="140" y2="140">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                                <linearGradient id="robotGradient2" x1="75" y1="35" x2="125" y2="85">
+                                    <stop offset="0%" stop-color="#f093fb"/>
+                                    <stop offset="100%" stop-color="#667eea"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="robot-status-badge">
+                        <span class="status-dot"></span>
+                        Autonomous & Ready
+                    </div>
+                </div>
+
+                <div class="robot-features">
+                    <h3 class="robot-subtitle">Autonomous Intelligence on Wheels</h3>
+                    <p class="robot-description">
+                        SCOUT transforms your smart home into an interactive, mobile ecosystem. More than just a robot car—it's your autonomous security guard, personal assistant, and intelligent companion that roams your home with purpose.
+                    </p>
+
+                    <div class="robot-capabilities">
+                        <div class="capability-item">
+                            <div class="capability-icon">🎯</div>
+                            <div>
+                                <h4>Advanced Obstacle Avoidance</h4>
+                                <p>LIDAR + AI vision navigation - seamlessly navigates furniture, pets, and people</p>
+                            </div>
+                        </div>
+
+                        <div class="capability-item">
+                            <div class="capability-icon">📹</div>
+                            <div>
+                                <h4>Real-Time Video AI Analysis</h4>
+                                <p>Gemini-powered vision identifies people, objects, and anomalies as it patrols</p>
+                            </div>
+                        </div>
+
+                        <div class="capability-item">
+                            <div class="capability-icon">📱</div>
+                            <div>
+                                <h4>Control from Anywhere</h4>
+                                <p>Drive manually or set autonomous patrol routes via phone app (local & remote)</p>
+                            </div>
+                        </div>
+
+                        <div class="capability-item">
+                            <div class="capability-icon">🔔</div>
+                            <div>
+                                <h4>Smart Notifications & Alerts</h4>
+                                <p>Instant alerts to all devices when SCOUT detects motion, packages, or unusual activity</p>
+                            </div>
+                        </div>
+
+                        <div class="capability-item">
+                            <div class="capability-icon">🤖</div>
+                            <div>
+                                <h4>Mobile AI Assistant</h4>
+                                <p>Speaks & listens - control your home, get updates, or have a conversation while SCOUT roams</p>
+                            </div>
+                        </div>
+
+                        <div class="capability-item">
+                            <div class="capability-icon">🚨</div>
+                            <div>
+                                <h4>Emergency Response Mode</h4>
+                                <p>Auto-investigates alarms, follows intruders, or guides first responders with live video</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="robot-extra-features">
+                <h3 class="extra-features-title">Beyond Patrol: SCOUT's Surprising Capabilities</h3>
+                <div class="extra-features-grid">
+                    <div class="extra-feature">
+                        <span class="extra-icon">📦</span>
+                        <h4>In-Home Delivery</h4>
+                        <p>Carries lightweight items between rooms - fetch your phone, deliver snacks to kids</p>
+                    </div>
+                    <div class="extra-feature">
+                        <span class="extra-icon">🐕</span>
+                        <h4>Pet Monitor & Entertainer</h4>
+                        <p>Follows your pets, streams video, plays interactive games, dispenses treats</p>
+                    </div>
+                    <div class="extra-feature">
+                        <span class="extra-icon">🌡️</span>
+                        <h4>Environmental Scanning</h4>
+                        <p>Mobile sensor array tracks temperature, humidity, air quality room-by-room</p>
+                    </div>
+                    <div class="extra-feature">
+                        <span class="extra-icon">💬</span>
+                        <h4>Family Message Display</h4>
+                        <p>Interactive screen shows reminders, calendar events, or video messages</p>
+                    </div>
+                    <div class="extra-feature">
+                        <span class="extra-icon">🔍</span>
+                        <h4>Smart Object Finder</h4>
+                        <p>"SCOUT, find my keys" - AI vision locates lost items and guides you there</p>
+                    </div>
+                    <div class="extra-feature">
+                        <span class="extra-icon">🎓</span>
+                        <h4>Educational Companion</h4>
+                        <p>Interactive STEM learning for kids - coding tutorials, trivia games, language practice</p>
+                    </div>
+                    <div class="extra-feature">
+                        <span class="extra-icon">🔋</span>
+                        <h4>Auto-Charging Dock</h4>
+                        <p>Returns to charging station when battery low - 8hr runtime, 2hr charge</p>
+                    </div>
+                    <div class="extra-feature">
+                        <span class="extra-icon">🎭</span>
+                        <div>
+                            <h4>Personality Modes</h4>
+                            <p>Switch between Professional Guard, Friendly Helper, or Playful Companion personalities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="robot-cta">
+                <div class="robot-cta-content">
+                    <h3>Add SCOUT to Your Smart Home</h3>
+                    <p>Available as an optional add-on to Pro and Enterprise plans</p>
+                    <div class="robot-pricing-info">
+                        <div class="robot-price">
+                            <span class="price-label">Hardware + Setup</span>
+                            <span class="price-amount">$899</span>
+                        </div>
+                        <div class="robot-price">
+                            <span class="price-label">Monthly Service</span>
+                            <span class="price-amount">+$29/mo</span>
+                        </div>
+                    </div>
+                    <a href="pages/contact.html" class="btn btn-primary btn-large">Request SCOUT Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Tech Stack Section -->
     <section id="tech-stack" class="tech-stack">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Powered by Industry-Leading Technology</h2>
-                <p class="section-subtitle">Enterprise-grade hardware and cutting-edge AI models</p>
+                <h2 class="section-title">Built on the Names Powering the AI Revolution</h2>
+                <p class="section-subtitle">NVIDIA, Google, OpenAI technology—from Fortune 500 datacenters to your living room</p>
             </div>
             <div class="tech-grid">
                 <div class="tech-category">
-                    <h3 class="tech-category-title">Hardware</h3>
+                    <h3 class="tech-category-title">Edge Hardware</h3>
                     <div class="tech-items">
                         <div class="tech-item">
                             <div class="tech-icon">⚡</div>
-                            <div class="tech-name">NVIDIA Jetson Orin</div>
-                            <div class="tech-desc">8GB - 32GB GPU</div>
+                            <div>
+                                <div class="tech-name">NVIDIA Jetson Orin</div>
+                                <div class="tech-desc">USA/Taiwan | 1024-2048 CUDA cores</div>
+                            </div>
                         </div>
                         <div class="tech-item">
-                            <div class="tech-icon">💾</div>
-                            <div class="tech-name">NVMe SSD</div>
-                            <div class="tech-desc">256GB+ Storage</div>
+                            <div class="tech-icon">📡</div>
+                            <div>
+                                <div class="tech-name">Silicon Labs EFR32</div>
+                                <div class="tech-desc">USA | Thread/Matter + Zigbee</div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📹</div>
+                            <div>
+                                <div class="tech-name">Amcrest Cameras</div>
+                                <div class="tech-desc">USA | NDAA-Compliant</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="tech-category">
-                    <h3 class="tech-category-title">AI Models</h3>
+                    <h3 class="tech-category-title">AI Performance Stack</h3>
                     <div class="tech-items">
                         <div class="tech-item">
                             <div class="tech-icon">🧠</div>
-                            <div class="tech-name">Cerebras Llama 70B</div>
-                            <div class="tech-desc">0.37s Response</div>
+                            <div>
+                                <div class="tech-name">Ultra-Fast Cloud LLM</div>
+                                <div class="tech-desc">0.37s response time | 3-tier fallback</div>
+                            </div>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">👁️</div>
-                            <div class="tech-name">Gemini 2.5 Flash</div>
-                            <div class="tech-desc">Video Analysis</div>
+                            <div>
+                                <div class="tech-name">Multimodal Vision AI</div>
+                                <div class="tech-desc">1-2s video analysis | 6-part breakdowns</div>
+                            </div>
                         </div>
                         <div class="tech-item">
-                            <div class="tech-icon">🎨</div>
-                            <div class="tech-name">FAL.ai Flux</div>
-                            <div class="tech-desc">Image Generation</div>
+                            <div class="tech-icon">💻</div>
+                            <div>
+                                <div class="tech-name">Local GPU Inference</div>
+                                <div class="tech-desc">Ollama 3B model | Offline capable</div>
+                            </div>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">🎤</div>
-                            <div class="tech-name">Whisper STT</div>
-                            <div class="tech-desc">Speech Recognition</div>
+                            <div>
+                                <div class="tech-name">Lightning Speech-to-Text</div>
+                                <div class="tech-desc">1-2s transcription | 99%+ accuracy</div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔊</div>
+                            <div>
+                                <div class="tech-name">Natural Voice Synthesis</div>
+                                <div class="tech-desc">Human-like TTS | 0.6s latency</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="tech-category">
-                    <h3 class="tech-category-title">Platform</h3>
+                    <h3 class="tech-category-title">Software Platform</h3>
                     <div class="tech-items">
                         <div class="tech-item">
                             <div class="tech-icon">🏠</div>
-                            <div class="tech-name">Home Assistant</div>
-                            <div class="tech-desc">Core Platform</div>
+                            <div>
+                                <div class="tech-name">Home Assistant</div>
+                                <div class="tech-desc">Open Source | Apache 2.0</div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📹</div>
+                            <div>
+                                <div class="tech-name">Frigate NVR</div>
+                                <div class="tech-desc">TensorRT Object Detection</div>
+                            </div>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">🐳</div>
-                            <div class="tech-name">Docker</div>
-                            <div class="tech-desc">Containerized</div>
+                            <div>
+                                <div class="tech-name">Docker Compose</div>
+                                <div class="tech-desc">Container Orchestration</div>
+                            </div>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">🔒</div>
-                            <div class="tech-name">Tailscale VPN</div>
-                            <div class="tech-desc">Secure Access</div>
+                            <div>
+                                <div class="tech-name">Tailscale VPN</div>
+                                <div class="tech-desc">Zero-Trust Remote Access</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -352,77 +747,88 @@
     <section id="pricing" class="pricing">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Transparent Pricing</h2>
-                <p class="section-subtitle">Choose the plan that fits your needs - no hidden fees</p>
+                <h2 class="section-title">Choose Your Jetson Platform</h2>
+                <p class="section-subtitle">All tiers include the same software—only hardware and cloud AI budget differ</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="pricing-tier">Entry</h3>
+                        <h3 class="pricing-tier">Entry - Orin Nano 8GB</h3>
                         <div class="pricing-amount">
                             <span class="currency">$</span>
                             <span class="amount">49</span>
                             <span class="period">/month</span>
                         </div>
                     </div>
+                    <div class="pricing-hw-specs">
+                        <strong>Hardware:</strong> 1024 CUDA cores, 8GB RAM, 15W power
+                    </div>
                     <ul class="pricing-features">
-                        <li class="included">Jetson Orin Nano 8GB</li>
-                        <li class="included">Cloud-assisted AI</li>
-                        <li class="included">Voice control</li>
-                        <li class="included">Ring camera AI analysis</li>
-                        <li class="included">Remote access (Tailscale)</li>
-                        <li class="included">Email support (48hr)</li>
-                        <li class="not-included">100% local mode</li>
-                        <li class="not-included">Priority support</li>
+                        <li class="included">Cloud AI (Cerebras + Gemini)</li>
+                        <li class="included">Local 3B fallback model</li>
+                        <li class="included">Voice control (Hey Jarvis)</li>
+                        <li class="included">Camera AI analysis (4 cams)</li>
+                        <li class="included">Thread/Matter + Zigbee coordinator</li>
+                        <li class="included">Tailscale VPN access</li>
+                        <li class="not-included">100% offline mode</li>
+                        <li class="not-included">8B local model</li>
                     </ul>
-                    <div class="pricing-setup">+ $149-$249 hardware</div>
+                    <div class="pricing-setup">+ $249 hardware setup</div>
                     <a href="pages/contact.html" class="btn btn-outline">Get Started</a>
                 </div>
 
                 <div class="pricing-card featured">
                     <div class="featured-badge">Best Value</div>
                     <div class="pricing-header">
-                        <h3 class="pricing-tier">Pro</h3>
+                        <h3 class="pricing-tier">Pro - Orin NX 16GB</h3>
                         <div class="pricing-amount">
                             <span class="currency">$</span>
                             <span class="amount">79</span>
                             <span class="period">/month</span>
                         </div>
                     </div>
+                    <div class="pricing-hw-specs">
+                        <strong>Hardware:</strong> 1024 CUDA cores, 16GB RAM, 25W power
+                    </div>
                     <ul class="pricing-features">
-                        <li class="included">Jetson Orin NX 16GB</li>
-                        <li class="included">100% local AI option</li>
-                        <li class="included">Cloud fallback</li>
-                        <li class="included">Advanced voice (wake word)</li>
-                        <li class="included">Unlimited video analysis</li>
-                        <li class="included">Priority support (24hr)</li>
-                        <li class="included">Image generation</li>
+                        <li class="included">100% local AI capable</li>
+                        <li class="included">Local 8B model (20 tok/s)</li>
+                        <li class="included">Cloud + hybrid modes</li>
+                        <li class="included">Camera AI (8 cams)</li>
+                        <li class="included">Priority support (12hr)</li>
+                        <li class="included">Image generation (Flux)</li>
                         <li class="included">Custom automations</li>
+                        <li class="included">Pet/person recognition</li>
+                        <li class="included">SCOUT robot compatible</li>
                     </ul>
-                    <div class="pricing-setup">+ $249-$399 hardware</div>
+                    <div class="pricing-setup">+ $399 hardware setup</div>
                     <a href="pages/contact.html" class="btn btn-primary">Get Started</a>
                 </div>
 
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="pricing-tier">Enterprise</h3>
+                        <h3 class="pricing-tier">Enterprise - AGX Orin 64GB</h3>
                         <div class="pricing-amount">
                             <span class="currency">$</span>
                             <span class="amount">199</span>
                             <span class="period">/month</span>
                         </div>
                     </div>
+                    <div class="pricing-hw-specs">
+                        <strong>Hardware:</strong> 2048 CUDA cores, 64GB RAM, 60W power
+                    </div>
                     <ul class="pricing-features">
-                        <li class="included">Jetson AGX Orin 32GB</li>
-                        <li class="included">Multi-tenant capable</li>
+                        <li class="included">70B local model capable</li>
+                        <li class="included">Multi-tenant (up to 8 units)</li>
+                        <li class="included">Unlimited cameras</li>
                         <li class="included">White-label branding</li>
                         <li class="included">Custom AI training</li>
                         <li class="included">SLA guarantee (99.5%)</li>
-                        <li class="included">Phone support</li>
-                        <li class="included">On-site service</li>
+                        <li class="included">Phone + on-site support</li>
                         <li class="included">Dedicated account manager</li>
+                        <li class="included">SCOUT robot compatible</li>
                     </ul>
-                    <div class="pricing-setup">+ $399+ hardware</div>
+                    <div class="pricing-setup">+ $899 hardware setup</div>
                     <a href="pages/contact.html" class="btn btn-outline">Contact Sales</a>
                 </div>
             </div>
@@ -449,17 +855,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-brand">
-                        <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
-                            <path d="M25 5L5 20V45H20V30H30V45H45V20L25 5Z" fill="url(#logoGradient2)"/>
-                            <circle cx="25" cy="22" r="3" fill="#fff"/>
-                            <defs>
-                                <linearGradient id="logoGradient2" x1="5" y1="5" x2="45" y2="45">
-                                    <stop offset="0%" stop-color="#667eea"/>
-                                    <stop offset="100%" stop-color="#764ba2"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                        <span class="brand-name">AI SmartHome</span>
+                        <img src="images/logo2.jpg" alt="AiHomes Logo" class="logo-icon">
+                        <span class="brand-name">AiHomes</span>
                     </div>
                     <p class="footer-description">Next-generation smart home automation powered by NVIDIA Jetson and cutting-edge AI. Privacy-first, ultra-fast, and endlessly intelligent.</p>
                 </div>
@@ -468,6 +865,7 @@
                     <ul class="footer-links">
                         <li><a href="#features">Features</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#robot-addon">SCOUT Robot</a></li>
                         <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#tech-stack">Technology</a></li>
                     </ul>
@@ -492,7 +890,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AI SmartHome Solutions. All rights reserved.</p>
+                <p>&copy; 2025 AiHomes. All rights reserved.</p>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
