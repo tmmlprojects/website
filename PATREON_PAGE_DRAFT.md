@@ -56,7 +56,7 @@ Your network security shouldn't depend on trusting firmware from nations with a 
    - Package/person/pet detection with configurable alerts
 
 3. **Security & Privacy**
-   - Zero-trust architecture with Tailscale VPN
+   - Zero-trust architecture with enterprise PKI certificates
    - No port forwarding, no DMZ, no firewall holes
    - AES-256 encryption for optional cloud backups
    - All processing can run 100% local
@@ -130,7 +130,7 @@ Your network security shouldn't depend on trusting firmware from nations with a 
 **Edge AI:**
 - NVIDIA Jetson Orin (1024-2048 CUDA cores)
 - Docker containerized services
-- Home Assistant core platform
+- Custom AI orchestration engine
 
 **AI Performance:**
 - 0.37s LLM response time (cloud, 3-tier fallback)
@@ -144,8 +144,8 @@ Your network security shouldn't depend on trusting firmware from nations with a 
 - Silicon Labs EFR32 multi-protocol coordinator
 
 **Privacy & Security:**
-- Zero-trust network architecture (Tailscale VPN)
-- TLS 1.3, AES-256, ChaCha20-Poly1305 encryption
+- Zero-trust network architecture (enterprise PKI certificates)
+- TLS 1.3, AES-256 encryption with trusted CA authorities
 - Container isolation with SHA256 verification
 - Optional: 100% local processing mode
 
@@ -224,13 +224,14 @@ Your network security shouldn't depend on trusting firmware from nations with a 
 - Cameras (Ring, Amcrest, Reolink: $30-200 each)
 - Zigbee devices (lights, sensors, switches)
 
-### Q: Is this replacing Home Assistant?
+### Q: How is this different from standard smart home platforms?
 
-**A:** No—we're **extending** Home Assistant with GPU-accelerated AI. Home Assistant remains the core platform. We add:
-- Natural language understanding
-- Computer vision analysis
-- Voice conversation capability
-- Local LLM processing
+**A:** This is a **custom-built software stack** designed specifically for GPU-accelerated AI on NVIDIA Jetson hardware. Not just an off-the-shelf platform with add-ons. We built from the ground up:
+- Proprietary AI orchestration layer
+- Multi-model LLM routing with local fallback
+- Computer vision pipeline optimized for CUDA
+- Natural language conversation engine
+- Enterprise-grade security architecture
 
 ### Q: What about privacy?
 
@@ -278,6 +279,6 @@ But it has to be done right:
 
 ---
 
-*Built with NVIDIA Jetson • Cerebras AI • Google Gemini • OpenAI Architecture • Home Assistant*
+*Built with NVIDIA Jetson • Cerebras AI • Google Gemini • OpenAI Architecture • Custom Software Stack*
 
 *American-designed hardware • Zero reliance on state sponsors of cyberterrorism • Privacy-first architecture*
